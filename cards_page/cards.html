@@ -12,14 +12,30 @@
     <div class="container">
         <div class="row">
             <div class="col"></div>
-            <div class="col-md-3">
-                <img class="img-fluid" src="../Letöltések/Nautilus_0.jpg" alt="">
+            <div class="col-md-5">
+                <div class="card my-3 ">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Ide kerül a kép</h5>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3">
-                <img class="img-fluid" src="../Letöltések/Tahm_Kench_Render.webp"   alt="">
-            </div>    
-            <div class="col"></div>
-                <button type="button" class="btn btn-success m-auto text-center     d-none d-md-block d-xl-none">Submit or smth</button>
+            <div class="col-md-5">
+                <div class="card my-3 ">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Ez alá írd a szöveget</h5>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                            <label for="comment">szöveg/fogalom</label>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>   
+        </div>
+        <div class="row">
+            <div class="d-grid ">
+                <button type="button" class="btn btn-success text-center ">Submit</button>
             </div>
         </div>
     </div>
