@@ -1,0 +1,29 @@
+{
+    "Base_database":[
+        {
+            "base":"House",
+            "flipped":"Ház"
+        },
+        {
+            "base":"Dog",
+            "flipped":"Kutya"
+        },
+        {
+            "base":"Car",
+            "flipped":"Személyigépjármű"
+        },
+        {
+            "base":"Fork",
+            "flipped":"Villa"
+        },
+        {
+            "base":"Electromagnetism",
+            "flipped":"Elektromágnesesség"
+        },
+        {
+            "base":"Bird",
+            "flipped":"Madár"
+        }
+    ]
+
+}

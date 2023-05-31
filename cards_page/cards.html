@@ -9,6 +9,7 @@
     <title>Card</title>
 </head>
 <body>
+    
     <div class="container">
         <div class="row">
             <div class="col"></div>
@@ -27,7 +28,7 @@
                         <div class="mb-3">
                             <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
                             <label for="comment">szöveg/fogalom</label>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -38,6 +39,15 @@
                 <button type="button" class="btn btn-success text-center ">Submit</button>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 mx-2 my-1">
+                <Button onclick="flip('card','card_flipped')">
+                    <div id="card" style="display: block;">Blank</div>
+                    <div id="card_flipped" style="display: none;">Blank_flipped</div>
+                </Button>
+            </div>
+        </div>
     </div>
+    <script src="./card.js"></script>
 </body>
 </html>
