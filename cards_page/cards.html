@@ -41,13 +41,47 @@
         </div>
         <div class="row">
             <div class="col-12 mx-2 my-1">
-                <Button onclick="flip('card','card_flipped')">
+                <Button id="card_button" onclick="flip('card','card_flipped')">
                     <div id="card" style="display: block;">Blank</div>
                     <div id="card_flipped" style="display: none;">Blank_flipped</div>
                 </Button>
+                <button onclick="data_insert('card_button')">New card</button>
             </div>
         </div>
     </div>
+    <table style="display: none;">
+        <thead>
+            <th>A oldal</th>
+            <th>B oldal</th>
+        </thead>
+        <tbody id="body">
+            <tr id="1">
+                <td id="1.1">House</td>
+                <td id="1.2">Ház</td>
+            </tr>
+            <tr id="2">
+                <td id="2.1">Dog</td>
+                <td id="2.2">Kutya</td>
+            </tr>
+            <tr id="3">
+                <td id="3.1">Car</td>
+                <td id="3.2">Személyigépjármű</td>
+            </tr>
+            <tr id="4">
+                <td id="4.1">Fork</td>
+                <td id="4.2">Villa</td>
+            </tr>
+            <tr id="5">
+                <td id="5.1">Electromagnetism</td>
+                <td id="5.2">Elektromágnesesség</td>
+            </tr>
+            <tr id="6">
+                <td id="6.1">Bird</td>
+                <td id="6.2">Madár</td>
+            </tr>
+        </tbody>
+    </table>
     <script src="./card.js"></script>
 </body>
+
 </html>

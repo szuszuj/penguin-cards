@@ -1,0 +1,11 @@
+{
+    "files":[
+        "data/data.json",
+        "cards_page/card.js",
+        "css/style.css"
+        
+    ],
+    "iLocs":[
+        "cards_page/cards.html"
+    ]
+}
