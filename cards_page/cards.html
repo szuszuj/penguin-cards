@@ -26,17 +26,19 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">Ez alá írd a szöveget</h5>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-                            <label for="comment">szöveg/fogalom</label>
+                            <label for="new_card.1">fogalom</label>
+                            <textarea class="form-control" rows="5" id="new_card.1" name="definition"></textarea>
+                            <label for="new_card.2">Válasz</label>
+                            <textarea class="form-control" rows="5" id="new_card.2" name="Reply"></textarea>
                         </div>
                     </div>
+                    <button type="button" class="btn btn-success text-center " onclick="save_data()">Submit</button>
                 </div>
             </div>
             <div class="col"></div>   
         </div>
         <div class="row">
             <div class="d-grid ">
-                <button type="button" class="btn btn-success text-center ">Submit</button>
             </div>
         </div>
         <div class="row">
@@ -45,6 +47,7 @@
                     <div id="card" style="display: block;">Blank</div>
                     <div id="card_flipped" style="display: none;">Blank_flipped</div>
                 </Button>
+                <br>
                 <button onclick="data_insert('card_button')">New card</button>
             </div>
         </div>
@@ -54,7 +57,7 @@
             <th>A oldal</th>
             <th>B oldal</th>
         </thead>
-        <tbody id="body">
+        <tbody id="tbody">
             <tr id="1">
                 <td id="1.1">House</td>
                 <td id="1.2">Ház</td>

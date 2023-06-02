@@ -63,10 +63,15 @@ function flip(card,cardflipped){
     //console.log(data)
 }
 var next_card = 0.0;
+var max_cards = document.getElementById("tbody").childElementCount;
 function data_insert(in_card){
-    var database="../data/data_table.html";
-    let max 
-    next_card += 1.0
+    //var database="../data/data_table.html";
+    if (next_card < max_cards){
+        next_card += 1.0
+    }
+    else{
+        next_card = 1.0
+    }
     console.log(document.getElementById(String(next_card+0.1)).innerHTML);
     console.log(document.getElementById(String(next_card+0.2)).innerHTML);
     document.getElementById(in_card).innerHTML = 
@@ -75,6 +80,24 @@ function data_insert(in_card){
         <div id="card_flipped" style="display: none;">${document.getElementById(String(next_card+0.2)).innerHTML}</div>
     `;
     console.log(next_card);
+}
+
+function save_data(){
+    console.log(document.getElementById("new_card.1").textContent);
+    max_cards = document.getElementById("tbody").childElementCount;
+    if(document.getElementById("new_card.1").value != "" && document.getElementById("new_card.2").value != ""){
+        document.getElementById("tbody").innerHTML += 
+        `
+            <tr id="${max_cards+1}">
+                <td id="${max_cards+1.1}">${document.getElementById("new_card.1").value}</td>
+                <td id="${max_cards+1.2}">${document.getElementById("new_card.2").value}</td>
+            </tr>
+        `
+        console.log(document.getElementById("tbody").innerHTML)
+        max_cards += 1.0;
+
+    }
+
 }
 
 //function data_insert(in_card,data = readDb("../data/data.json")){
