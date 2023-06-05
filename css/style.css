@@ -1,0 +1,35 @@
+button{
+    margin: auto;
+
+}
+.card{
+    margin: auto;
+    min-height: 80%;
+    width: 80%;
+}
+
+.ma{
+    margin: auto;
+}
+
+body{
+    background-color: rgb(200, 200, 255);
+}
+
+.warning{
+    color: red;
+    font-weight: bold;
+}
+p{
+    text-align: justify;
+}
+.center,.center element{
+    margin: auto;
+    width: 80%;
+}
+#card,#card_button,#card_flipped{
+    background-color: #198754;
+    text-align: center;
+    margin: auto;
+    font-size: 5rem;
+}

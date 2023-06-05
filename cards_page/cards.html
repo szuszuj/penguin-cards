@@ -9,26 +9,33 @@
     <title>Card</title>
 </head>
 <body>
-    
+    <button class="btn btn-success"><a href="../landing_page/index.html">Vissza a kezdő oldalra</a></button>
     <div class="container">
         <div class="row">
-            <div class="col"></div>
-            <div class="col-md-5">
+
+            <div class="col-12 col-md-6 col-xl-9">
                 <div class="card my-3 ">
-                    <div class="card-body">
+                    <p>
+                        Ezen az oldalon egy egyszerű és letisztult szókártya alkalmazást találhat. Hozzáadni új kártyát a példaadatbázishoz / az új ön által létrehozotthoz <span class="d-xs-block d-md-none">a lejjebbi</span><span class="d-sm-none d-md-block">a jobb oldali</span> szövegdobozokkal teheti meg, csak akkor adódik a kártya az adatbázishoz ha mindkét mező ki van töltve. 
+                    </p>
+                    <p>
+                        <span class="warning">Figyelem, az oldal biztonsági és technikai okok miatt semmilyen módon nem őrzi meg a kártyákat, tehát az oldal bezárását / újratöltését követően azonnal törlődik, és nem lehet visszaállítani.</span>
+                    </p>
+                    <!--<div class="card-body">
                         <h5 class="card-title text-center">Ide kerül a kép</h5>
                         <input class="form-control" type="file" id="formFile">
-                    </div>
+                    </div>-->
                 </div>
             </div>
-            <div class="col-md-5">
+
+            <div class="col-12 col-md-6 col-xl-3">
                 <div class="card my-3 ">
                     <div class="card-body">
                         <h5 class="card-title text-center">Ez alá írd a szöveget</h5>
                         <div class="mb-3">
-                            <label for="new_card.1">fogalom</label>
+                            <label for="new_card.1">fogalom (1. oldal)</label>
                             <textarea class="form-control" rows="5" id="new_card.1" name="definition"></textarea>
-                            <label for="new_card.2">Válasz</label>
+                            <label for="new_card.2">Válasz (2. oldal)</label>
                             <textarea class="form-control" rows="5" id="new_card.2" name="Reply"></textarea>
                         </div>
                     </div>
@@ -43,12 +50,15 @@
         </div>
         <div class="row">
             <div class="col-12 mx-2 my-1">
-                <Button id="card_button" onclick="flip('card','card_flipped')">
+                <Button id="card_button" onclick="flip('card','card_flipped')" class="btn btn-success text-center card">
                     <div id="card" style="display: block;">Blank</div>
                     <div id="card_flipped" style="display: none;">Blank_flipped</div>
                 </Button>
                 <br>
-                <button onclick="data_insert('card_button')">New card</button>
+                <div class="center">
+                    <button onclick="data_insert('card_button')" class="ma btn btn-success">New card</button>
+                    <button onclick="delete_database('card_button')" class="ma btn btn-danger" id="delete_db">Delete database</button>
+                </div>
             </div>
         </div>
     </div>

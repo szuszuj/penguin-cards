@@ -99,6 +99,22 @@ function save_data(){
     }
 
 }
+//function delete_card(){
+//    document.getElementById(String(next_card-(next_card%1))).innerHTML = ""
+//
+//}
+
+function delete_database(in_card){
+    document.getElementById("tbody").innerHTML = ``
+    max_cards = document.getElementById("tbody").childElementCount;
+    document.getElementById(in_card).innerHTML = `
+        <div id="card" style="display: block;">Blank</div>
+        <div id="card_flipped" style="display: none;">Blank_flipped</div>
+        `
+
+}
+
+
 
 //function data_insert(in_card,data = readDb("../data/data.json")){
 //    var cards = "";
