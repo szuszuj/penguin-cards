@@ -2,14 +2,12 @@ button{
     margin: auto;
 
 }
-
-
 .ma{
     margin: auto;
 }
 
 body{
-    background-color: rgb(200, 200, 255);
+    background-color: rgb(186, 186, 200) !important;
 }
 
 .warning{
@@ -28,6 +26,27 @@ p{
     text-align: center;
     margin: auto;
     font-size: 5rem;
+}
+#card_sz{
+    padding: 7px;
+}
+
+nav,footer{
+    background-color: rgba(48,83,158, 0.7);
+    height: 4.5rem;
+}
+footer {
+    display: block;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+body>div.container{
+    padding-bottom:6rem;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 footer>p{
     text-align: center;
