@@ -2,11 +2,7 @@ button{
     margin: auto;
 
 }
-.card{
-    margin: auto;
-    min-height: 80%;
-    width: 80%;
-}
+
 
 .ma{
     margin: auto;
@@ -32,4 +28,11 @@ p{
     text-align: center;
     margin: auto;
     font-size: 5rem;
+}
+footer>p{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
